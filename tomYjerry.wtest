@@ -1,0 +1,5 @@
+import tomYJerry.*
+test "velocidad maxima de tom" {
+  assert.equals(10,tom.velocidadMaxima())
+}
+
