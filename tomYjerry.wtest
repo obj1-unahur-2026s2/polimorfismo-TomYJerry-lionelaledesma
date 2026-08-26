@@ -1,5 +1,13 @@
 import tomYJerry.*
-test "velocidad maxima de tom" {
-  assert.equals(10,tom.velocidadMaxima())
+test "velocidad maxima inicial de tom es 10" {
+  assert.equals(10, tom.velocidadMaxima())
 }
 
+test "tom inicialmente esta feliz" {
+  assert.that(tom.estaFeliz())
+}
+
+test "tom despues de correr 90 metros no esta feliz" {
+  tom.correr(90)
+  assert.notThat(tom.estaFeliz())
+}
